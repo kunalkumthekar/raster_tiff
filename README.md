@@ -3,4 +3,8 @@ This repository deals with image segmentation task performed on raster data. The
 
 The objective was to perform accurate segmentation on the Multispectral raster data with the band order (4,3,2) and compare its results with the raster data (all bands). Currently, the results obtained are limited to raster data with band order (4,3,2).
 The following is the sample result obtained : 
-![Samples Segmentation output](./experiment/SegmentationOutput_Bands_432.png) 
+![Samples Segmentation output](./experiment/SegmentationOutput_Bands_432.png)
+
+## Introduction ##
+# Raster Data #
+
