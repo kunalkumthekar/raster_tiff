@@ -20,4 +20,5 @@ One of the few disadvantages that was observed is that Raster Grid Data when mer
 Bands in raster data represents layers. Every layer has particular information (types of info mentioned above) stored in it. The band information is stored either in the form of binary image (grayscale), or color (RGB). The RGB color are defined in the band matrix.
 Inorder to create a an RGB composite dataset, 3 bands information was stacked together. Have a look at the "data" folder in the repo.
 Sample of Images and Masks :
-![Samples Images and Masks](./data/Images/img_1.jpg)(./data/Masks/img_1.jpg)
+![Samples Images](./data/Images/img_1.jpg)
+![Samples Masks](./data/Masks/img_1.jpg)
