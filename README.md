@@ -3,6 +3,7 @@ This repository deals with image segmentation task performed on raster data. The
 
 The objective was to perform accurate segmentation on the Multispectral raster data with the band order (4,3,2) and compare its results with the raster data (all bands). Currently, the results obtained are limited to raster data with band order (4,3,2). The result obtained is not currently satisfactory and work should be done to improvise.
 The following is the sample result obtained: 
+
 ![Samples Segmentation output](./experiment/SegmentationOutput_Bands_432.png)
 
 ## Introduction ##
@@ -43,3 +44,11 @@ python main.py --data-directory data --exp_directory experiment --epochs 25 --ba
   --help                 Show this message and exit.
 ```
 
+## Citation ##
+Bibtex Entry:
+
+@misc{minhas_2019, title={Transfer Learning for Semantic Segmentation using PyTorch DeepLab v3}, url={https://github.com/msminhas93/DeepLabv3FineTuning}, journal={GitHub.com/msminhas93}, author={Minhas, Manpreet Singh}, year={2019}, month={Sep}}
+
+IEEE Format Citation:
+
+M. S. Minhas, “Transfer Learning for Semantic Segmentation using PyTorch DeepLab v3,” GitHub.com/msminhas93, 12-Sep-2019. [Online]. Available: https://github.com/msminhas93/DeepLabv3FineTuning.
