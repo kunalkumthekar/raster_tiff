@@ -13,7 +13,7 @@ def main():
     """This function reads multiple raster images with multiple channels and attempts to merge them to create a raster map
     The map being a raster map, every grid that the image is divided in consists of information (metadata) like 
      Spatial Extent( X,Y coordinates), CRS (Coordinate Reference System),Resolution etc..
-    After the merge of the images is done, open the Mosaic.tif (map) with the help of open source software "QGIS" / Use trial.py
+    After the merge of the images is done, open the Mosaic.tif (map) with the help of open source software "QGIS"
     """
     tif_list = []
     for file in glob.iglob(label_path + "**/**.tif", recursive=True):

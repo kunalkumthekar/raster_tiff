@@ -1,6 +1,7 @@
 """
 Author: Manpreet Singh Minhas
 Contact: msminhas at uwaterloo ca
+Please refer to the repo of the author @ https://github.com/msminhas93/DeepLabv3FineTuning
 """
 from pathlib import Path
 from typing import Any, Callable, Optional
