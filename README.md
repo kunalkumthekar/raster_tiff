@@ -44,6 +44,17 @@ python main.py --data-directory data --exp_directory experiment --epochs 25 --ba
   --help                 Show this message and exit.
 ```
 
+```vis.ipynb``` is used to visualize the model, plot the Loss vs epoch plot as well as the F1 score vs Epoch curve.
+Further, the file can be used to test images by inputting them to the model (in which the trained weights are loaded).
+
+## Important Notes ##
+
+1. The task seems to be clearly overfitting as the training Loss as well as the Test Loss seem to be pretty good, yet the predictions are not up to the standards.
+2. Adding L2 regularization in the Adam optimizer by adding weight decay to the optimizer arg like : ```optimizer = torch.optim.Adam(model.parameters(), lr=1e-4, weight_decay = 1e-5)``` Increasing the weight decay parameter would increase the regularization parameter and help in reducing overfitting.
+3. Increasing the augmenters in the transformation. Changes have to be done in ```datahandler.py``` .
+3. Decreasing the number of layers (reducing architecture complexity) / Increase keep_prob parameter (probability of keeping a node in the training process) in Dropout regilarization / Implementing Early stopping. (Stopping the training process if the "parameter" is getting worse)
+4. The second task of segmentation on all band images is not yet performed due to time constraint.
+
 ## Citation ##
 Bibtex Entry:
 
