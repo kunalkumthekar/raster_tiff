@@ -15,8 +15,6 @@ Raster maps are divided into grid cells (pixels), where every cell may represent
 
 One of the few disadvantages that was observed is that Raster Grid Data when merged together requires huge amount of memory upto number of Gigabytes. The file ```merge.py``` deals with an attempt to stitch all the raster grid cell information to form one raster map for visualization. However, provided the dataset is too memory consuming (almost 230 gigs required).
 
-**** Have a look at the log.csv file stored in ./experiments to go through the evaluation parameters like training_loss, test_loss and their corresponding F1 scores ****
-
 ### Raster Bands ###
 ![Sample raster band info](./experiment/raster_band.gif)
 
@@ -24,7 +22,6 @@ One of the few disadvantages that was observed is that Raster Grid Data when mer
 
 Bands in raster data represents layers. Every layer has particular information (types of info mentioned above) stored in it. The band information is stored either in the form of binary image (grayscale), or color (RGB). The RGB color are defined in the band matrix.
 Inorder to create a an RGB composite dataset, 3 bands information was stacked together. Have a look at the "data" folder in the repo.
-Sample:
 
 ### Creating Dataset ###
 The dataset is created using the files ```image_dataset.py``` and ```label_dataset.py```
@@ -48,6 +45,8 @@ python main.py --data-directory data --exp_directory experiment --epochs 25 --ba
 
 ```vis.ipynb``` is used to visualize the model, plot the Loss vs epoch plot as well as the F1 score vs Epoch curve.
 Further, the file can be used to test images by inputting them to the model (in which the trained weights are loaded).
+
+**** Have a look at the log.csv file stored in ./experiments to go through the evaluation parameters like training_loss, test_loss and their corresponding F1 scores ****
 
 ## Important Notes ##
 
