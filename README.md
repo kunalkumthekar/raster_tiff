@@ -1,7 +1,7 @@
 # Image Segmentation on Raster Data #
 This repository deals with image segmentation task performed on raster data. The data is not trained from scratch and transfer learning is implemented to fine tune the pretrained model. This repo is based on the work done by @msminhas93 (https://github.com/msminhas93/DeepLabv3FineTuning/).
 
-The objective was to perform accurate segmentation on the Multispectral raster data with the band order (4,3,2) and compare its results with the raster data (all bands). Currently, the results obtained are limited to raster data with band order (4,3,2).
+The objective was to perform accurate segmentation on the Multispectral raster data with the band order (4,3,2) and compare its results with the raster data (all bands). Currently, the results obtained are limited to raster data with band order (4,3,2). The result obtained is not currently satisfactory and work should be done to improvise.
 The following is the sample result obtained : 
 ![Samples Segmentation output](./experiment/SegmentationOutput_Bands_432.png)
 
@@ -16,5 +16,8 @@ One of the few disadvantages that was observed is that Raster Grid Data when mer
 
 ### Raster Bands ###
 ![Sample raster band info](./experiment/raster_band.gif)
-
-
+(credits : https://desktop.arcgis.com/en/arcmap/10.3/manage-data/raster-and-images/raster-bands.htm)
+Bands in raster data represents layers. Every layer has particular information (types of info mentioned above) stored in it. The band information is stored either in the form of binary image (grayscale), or color (RGB). The RGB color are defined in the band matrix.
+Inorder to create a an RGB composite dataset, 3 bands information was stacked together. Have a look at the "data" folder in the repo.
+Sample of Images and Masks :
+![Samples Images and Masks](./data/Images/img_1.jpg)(./data/Masks/img_1.jpg)
