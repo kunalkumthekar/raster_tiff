@@ -25,6 +25,6 @@ Sample:
 
 ### Usage ###
 Usage : 
-´´´
+```
 python main.py --data-directory data --exp_directory experiment --epochs 25 --batch-size 25
-´´´
+```
