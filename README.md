@@ -12,7 +12,7 @@ Raster maps are divided into grid cells (pixels), where every cell may represent
 2. Useful to perform surface analysis.
 3. The Matrix Data structure uniformy stores information in the form of lines, points, plygons etc..
 
-One of the few disadvantages that was observed is that Raster Grid Data when merged together requires huge amount of memory upto number of Gigabytes.
+One of the few disadvantages that was observed is that Raster Grid Data when merged together requires huge amount of memory upto number of Gigabytes. The file ```merge.py``` deals with an attempt to stitch all the raster grid cell information to form one raster map for visualization. However, provided the dataset is too memory consuming (almost 230 gigs required).
 
 ### Raster Bands ###
 ![Sample raster band info](./experiment/raster_band.gif)
